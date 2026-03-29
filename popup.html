@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 250px;
+            font-family: sans-serif;
+            padding: 15px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 16px;
+            margin: 0 0 10px 0;
+        }
+
+        .info {
+            background: #f9f9f9;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        p {
+            font-size: 12px;
+            margin: 5px 0;
+            color: #444;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        #nome {
+            font-weight: bold;
+            color: #e67e22;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #preco {
+            font-weight: bold;
+            color: #27ae60;
+            font-size: 14px;
+        }
+
+        .btn-google {
+            background: #4285f4;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        /* O BOTÃO "MELHOR OPÇÃO" */
+        .btn-melhor-opcao {
+            background: linear-gradient(135deg, #1e3799 0%, #4a69bd 100%);
+            color: white;
+            border: none;
+            padding: 14px;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 12px rgba(30, 55, 153, 0.3);
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn-melhor-opcao:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 15px rgba(30, 55, 153, 0.4);
+            filter: brightness(1.1);
+        }
+
+        .sub-texto {
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+            opacity: 0.9;
+        }
+
+        .principal-texto {
+            font-size: 14px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>🚀 Comparador Rápido</h2>
+    <div class="info">
+        <p><strong>Produto:</strong> <span id="nome">Identificando...</span></p>
+        <p><strong>Preço Atual:</strong> <span id="preco">---</span></p>
+        <button class="btn-melhor-opcao" id="btn-melhor-link">
+            <span class="subtexto">⚡ Economia Detectada</span>
+        </button>
+        <button id="btn-comparar" class="btn-google">COMPARAR NO GOOGLE</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

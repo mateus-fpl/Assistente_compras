@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Assistente de Compras Seguro",
+  "version": "1.0",
+  "description": "Analisa preços, detecta produtos e compara no Google Shopping.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+  "https://api.mercadolibre.com/*",
+  "https://api.openai.com/*"
+],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.mercadolivre.com.br/*", 
+        "https://*.amazon.com.br/*",
+        "https://*.magazineluiza.com.br/*",
+        "https://*.casasbahia.com.br/*",
+        "https://*.americanas.com.br/*",
+        "https://*.shopee.com.br/*",
+        "https://*.aliexpress.com/*",
+        "https://*.kabum.com.br/*",
+        "https://*.extra.com.br/*",
+        "https://*.shein.com/*",
+        "https://br.shein.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
