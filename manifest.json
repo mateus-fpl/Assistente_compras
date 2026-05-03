@@ -13,9 +13,10 @@
     "storage"
   ],
   "host_permissions": [
-  "https://api.mercadolibre.com/*",
-  "https://api.openai.com/*"
-],
+    "http://localhost:5000/*",
+    "https://api.mercadolibre.com/*",
+    "https://api.openai.com/*"
+  ],
   "content_scripts": [
     {
       "matches": [
